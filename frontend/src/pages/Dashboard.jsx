@@ -26,7 +26,9 @@ export default function Dashboard() {
   const [showDatePicker, setShowDatePicker] = useState(false);
 
   useEffect(() => {
-    getReviews().then(setReviews);
+    getReviews().then(setReviews).catch( err => {
+      console.log(err)
+    });
     
   }, []);
 
