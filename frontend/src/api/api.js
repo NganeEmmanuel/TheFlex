@@ -1,7 +1,7 @@
 import axios from "axios";
 import { data } from "react-router-dom";
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://the-flex-zmvf.vercel.app/";
 
 export const getReviews = async () => {
   const res = await axios.get(`${API_URL}/reviews/hostaway`);
