@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import reviewRoutes from "../routes/reviews.js";
+import reviewRoutes from "routes/reviews.js";
 
 
 const app = express();
