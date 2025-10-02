@@ -23,6 +23,7 @@ function normalizeReviews(data) {
 
 // GET reviews
 router.get("/hostaway", async (req, res) => {
+  console.log("calling hostway")
   try {
     const reviews = await fetchReviews();
     let normalized = normalizeReviews(reviews);
@@ -40,6 +41,7 @@ router.get("/hostaway", async (req, res) => {
 
 
 router.get("/public", async (req, res) => {
+  console.log("calling public")
   try {
     const reviews = await fetchReviews();
     let normalized = normalizeReviews(reviews);
